@@ -1,0 +1,5 @@
+# local logs
+.log*
+
+# Editor specific configuration
+.vscode/
