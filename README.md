@@ -24,6 +24,12 @@ Per variatie werken we uit:
   - in [Excalidraw](https://excalidraw.com/) of [draw.io](https://app.diagrams.net/)
   - filename conventie: `lv-<nr>-<naam>-<naam-plaatje>.excalidraw.io`
 
+## Bronnen
+
+Inspiratie en referentie bronnen die gebruikt zijn:
+
+- [federatief.datastelsel.nl | Data deel concept](https://federatief.datastelsel.nl/kennisbank/datadeelconcept/)
+
 ## Contributie
 
 We werken voornamelijk met Markdown files en plaatjes ... waarbij de plaatjes
