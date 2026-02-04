@@ -1,15 +1,17 @@
 # FDS Landelijke Voorziening
 
-Uitwerking van casuïtiek, patronen, voorwaarden en aspecten... rondom **landelijke voorzieningen** (LVs).
+Uitwerking van casuïtiek, patronen, voorwaarden en aspecten... rondom **~~landelijke
+voorzieningen~~** (LVs) of misschien beter: **samenvoegend verstrekkingspunt**.
 
 Verschillende variaties:
 
 - Casus LV-WOZ
 - ...? (welke casussen nog meer?)
-- Patroon LV gelijkvormige bronnen incl. conflictresolutie
-- Patroon LV gelijkvormige bronnen 1-op-1 replicatie
-- Patroon LV gelijkvormige selectie uit vergelijkbare bronnen incl. conflictresolutie
-- Patroon LV gelijkvormige selectie uit vergelijkbare bronnen 1-op-1 replicatie
+- [Patroon verstrekkingspunt cumulatie gelijkvormige
+  bronnen](./doc/patroon-verstrekkingspunt-cumulatie-gelijkvormige-bronnen.md)
+- [Patroon verstrekkingspunt consolidatie gelijkvormige
+  bronnen](./doc/patroon-verstrekkingspunt-consolidatie-gelijkvormige-bronnen.md)
+- Patroon verstrekkingspunt gelijkvormige selectie uit vergelijkbare bronnen
 - ...? (welke variaties hebben we nog meer?)
 
 Per variatie werken we uit:
@@ -17,7 +19,7 @@ Per variatie werken we uit:
 - 1 Markdown file in `/doc` folder
   - filename conventies
     - lower case en hyphens (`-`)
-    - `casus-lv-<naam>.md` of `patroon-lv-<naam>.md`
+    - `casus-lv-<naam>.md` of `patroon-<naam>.md`
 - Daarin staat volgens template:
   - Naam
   - Beschrijving (uitgebreide toelichting)
@@ -27,7 +29,7 @@ Per variatie werken we uit:
 - Begeleidende plaatjes
   - in [Excalidraw](https://excalidraw.com/) of [draw.io](https://app.diagrams.net/)
   - filename conventie: `casus-lv-<naam>-<naam-plaatje>.excalidraw.svg`
-  - filename conventie: `patroon-lv-<naam>-<naam-plaatje>.excalidraw.svg`
+  - filename conventie: `patroon-<naam>-<naam-plaatje>.excalidraw.svg`
 
 ## Definities
 
@@ -45,19 +47,23 @@ Per variatie werken we uit:
 
 **Herleidbaarheid** gaat over de [data
 lineage](https://www.noraonline.nl/wiki/Handreiking_Datalineage), de semantische herleidbaarheid
-naar het _origineel_, daar waar de informatie oorspronkelijk is vastgelegd, in de _bron_.
+naar het *origineel*, daar waar de informatie oorspronkelijk is vastgelegd, in de *bron*.
 
 **Traceerbaarheid** gaat over de navolgbaarheid waar de informatie (data) vandaan is gekomen, van
 welk verstrekkingspunt en welke route het heeft afgelegd.
 
 ## Landelijke voorziening
 
-![Landelijke voorziening](./landelijke-voorziening.excalidraw.svg)
+Een **landelijke voorziening** is een _samenvoegend verstrekkingspunt_ dat is aangewezen als
+ontsluiting van meerdere bronnen. Afnemers kunnen op deze manier landelijke datasets bevragen en
+gebruiken zonder zelf alle bronnen afzonderlijk te bevragen. Bovendien wordt in een landelijke
+voorziening consolidatie toegepast om conflicterende situaties voor afnemers op te lossen. Dit het
+[patroon verstrekkingspunt consolidatie gelijkvormige
+bronnen](./doc/patroon-verstrekkingspunt-consolidatie-gelijkvormige-bronnen.md). Deze
+oplossingsrichting draagt bij aan minder **estafette** en dus meer traceerbaarheid en
+herleidbaarheid naar de bron (van oorsprong) heeft extra aandacht genoten evenals historie.
 
-Met een **landelijke voorziening** als _verstrekkingspunt_ worden meerdere _bronnen_ samengevoegd en
-kunnen _afnemers_ meerdere bronnen in één keer bevragen. De _traceerbaarheid_ verloopt dan via de
-landelijke voorziening, terwijl de herleidbaarheid nog steeds verwijst naar de _bron_ (van
-oorsprong).
+![Landelijke voorziening](samenvoegend-verstrekkingspunt.excalidraw.svg)
 
 ## Resources
 
