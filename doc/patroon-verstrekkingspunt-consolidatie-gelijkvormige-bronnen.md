@@ -26,6 +26,6 @@ Consolidatie betekent:
   en gelijkvormig
 
 ![Meerdere bounded
-contexten](./patroon-verstrekkingspunt-consolidatie-gelijkvormige-bronnen.excalidraw%20copy.svg)
+contexten](./patroon-verstrekkingspunt-consolidatie-gelijkvormige-bronnen.excalidraw.svg)
 
 [^1]: Zie [definities](../README.md#definities)
