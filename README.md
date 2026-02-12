@@ -12,6 +12,7 @@ Verschillende variaties:
 - [Patroon verstrekkingspunt consolidatie gelijkvormige
   bronnen](./doc/patroon-verstrekkingspunt-consolidatie-gelijkvormige-bronnen.md)
 - Patroon verstrekkingspunt gelijkvormige selectie uit vergelijkbare bronnen
+- [Toetsing criteria](./doc/toetsing-criteria.md)
 - ...? (welke variaties hebben we nog meer?)
 
 Per variatie werken we uit:
