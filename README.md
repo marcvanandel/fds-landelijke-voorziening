@@ -41,6 +41,10 @@ Per variatie werken we uit:
 - **verstrekkingspunt** : Een gegevensdienst die is *aangewezen* om gebruikt te worden om bepaalde
   soorten gegevens te verkrijgen
   ([bron](https://www.noraonline.nl/wiki/Begrip:Id-6ed15269-8079-6b81-8f7d-2f6a1cae488d))
+- **bounded context**: Een (sub)domein of taakgebied waarin concepten eenduidig geïnterpreteerd
+  worden, regels en gedrag consistent zijn en bedrijfsprocessen op elkaar aansluiten
+  ([bron](https://website-digilab-overheid-nl-research-uit-betrouw-e1f39021ce924c.gitlab.io/handreiking/handreiking.html#registergrenzen.md__bounded-context))[^1]
+
 
 ## Herleidbaarheid en traceerbaarheid
 
@@ -95,3 +99,26 @@ asdf install
 ## Formalities
 
 This repo is licensed under [EUPL v1.2](LICENSE).
+
+---
+
+[^1]: Bounded context is een begrip uit Domain Driven Design en wordt ook in de [Handreiking van Uit
+    betrouwbare
+    bron](https://website-digilab-overheid-nl-research-uit-betrouw-e1f39021ce924c.gitlab.io/handreiking/handreiking.html#registergrenzen.md__bounded-context)
+    scherp beschreven:
+
+    > Binnen een domein kunnen meerdere subdomeinen of taakgebieden bestaan. Daarbij horen
+    > verantwoordelijkheden, die zijn toegekend aan specifieke teams, afdelingen of bedrijfseenheden.
+    > Zij worden ondersteund door eigen semantiek, processen en regels. Deze zaken kunnen worden
+    > beschreven in een **model**: een systeem van abstracties dat beschrijft hoe men vanuit een
+    > taakgebied naar de wereld kijkt en reageert op veranderingen in de buitenwereld. Zo’n model is
+    > beschreven in **gemeenschappelijke taal** die binnen het hele taakgebied begrepen wordt. Model
+    > en taal beschrijven dus een voor betrokkenen herkenbare ‘blauwdruk’ van het taakgebied, die
+    > (onder andere) de basis kan vormen voor het ontwerp van een register. Een in gemeenschappelijke
+    > taal ondubbelzinnig en samenhangend gemodelleerd taakgebied noemen we een **‘bounded context’**.
+    > 
+    > Hier geldt (zoveel mogelijk) dat:
+    > 
+    > - dezelfde concepten eenduidig geïnterpreteerd worden (op basis van gemeenschappelijke taal),
+    > - regels en gedrag consistent zijn, en
+    > - bedrijfsprocessen op elkaar aansluiten.

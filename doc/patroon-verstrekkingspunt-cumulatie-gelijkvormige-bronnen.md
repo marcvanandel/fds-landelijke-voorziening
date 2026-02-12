@@ -13,5 +13,10 @@ Cumulatie betekent:
 
 - dat gelijkvormige informatie wordt samengevoegd tot één geheel
 - dat conflicterende situatie als zodanig worden ontsloten
+- dat het geheel één _bounded context_[^1] vormt als geheel (hoewel het samenvoegend
+  verstrekkingspunt wel conflicten tussen bronnen kan bevatten)
 
-// TODO
+![Enkelvoudige bounded
+context](./patroon-verstrekkingspunt-cumulatie-gelijkvormige-bronnen.excalidraw.svg)
+
+[^1]: Zie [definities](../README.md#definities)

@@ -19,5 +19,13 @@ Consolidatie betekent:
   in het consoliderende verstrekkingspunt moeten worden ingetrokken. Mogelijk is de eindsituatie
   anders dan eerder gepubliceerd vanuit het verstrekkingspunt omdat de bronnen tot andere
   oplossingen komen dan de consolidatieregels.
+- dat het verstrekkingspunt _eigen verantwoording_ dient te geven over conflict resolutie en dus de
+  consolidatieregels
+- dat er meerdere _bounded contexts_[^1] bestaan, namelijk de bronnen en het samenvoegend
+  verstrekkingspunt; dat zijn namelijk (opgeteld) niet volledig met elkaar gelijk, wel gerelateerd
+  en gelijkvormig
 
-// TODO
+![Meerdere bounded
+contexten](./patroon-verstrekkingspunt-consolidatie-gelijkvormige-bronnen.excalidraw%20copy.svg)
+
+[^1]: Zie [definities](../README.md#definities)
