@@ -19,8 +19,6 @@ Cumulatie betekent:
 ![Enkelvoudige bounded
 context](./patroon-verstrekkingspunt-cumulatie-gelijkvormige-bronnen.excalidraw.svg)
 
-// TODO
-
 [^1]: Bounded context is een begrip uit Domain Driven Design en wordt ook in de [Handreiking van Uit
     betrouwbare
     bron](https://website-digilab-overheid-nl-research-uit-betrouw-e1f39021ce924c.gitlab.io/handreiking/handreiking.html#registergrenzen.md__bounded-context)
