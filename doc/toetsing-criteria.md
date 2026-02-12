@@ -21,26 +21,21 @@ toetsing behandelen we de eerste twee, de varianten die gelden voor gelijkvormig
 Compilatie (het combineren van gegevens uit _ongelijkvormige_ bronnen voor specifieke doeleinden)
 valt buiten de scope van deze toetsing.
 
-De toetsing beoordeelt per criterium hoe het patroon zich verhoudt tot het principe "data bij de
-bron" en maakt waar relevant onderscheid tussen beide varianten. Bij elk criterium geven we een
-kwalitatief oordeel: **sterk punt**, **neutraal** of **aandachtspunt**.
-
 ## 1. Actualiteit
 
-_"Gegevens die via een verstrekkingspunt worden ontsloten moeten zo actueel mogelijk zijn, idealiter
-rechtstreeks uit de bron."_
+_"De actualiteit moet bij elke gegevensdeling en elk gegevensgebruik inzichtelijk zijn en worden
+vastgelegd. De context bepaalt hoe actueel gegevens minimaal moeten zijn."_
 
 Een samenvoegend verstrekkingspunt werkt per definitie met een kopie van de brongegevens. Er zit
-altijd enige vertraging tussen een mutatie in de bron en de beschikbaarheid in het
-verstrekkingspunt. De mate van vertraging hangt af van het synchronisatiemechanisme: event-driven
-(near-realtime) of periodieke batch-imports. In beide gevallen is de data in het verstrekkingspunt
-niet real-time de brondata.
+altijd vertraging tussen een mutatie in de bron en de beschikbaarheid in het verstrekkingspunt. De
+mate van vertraging hangt af van het synchronisatiemechanisme (event-driven of periodieke
+batch-imports) en de afspraken tussen bron en verstrekkingspunt over synchronisatiefrequentie en
+-prioriteit. Het verstrekkingspunt moet deze vertraging transparant maken door actualiteitsmetadata
+per record bij te houden (tijdstip van bronmutatie, tijdstip van synchronisatie).
 
 Dit geldt voor zowel cumulatie als consolidatie. Bij consolidatie kan de vertraging groter zijn
-wanneer conflictdetectie en -resolutie extra verwerkingstijd vergen.
-
-Mitigatie is mogelijk door near-realtime synchronisatie (bijvoorbeeld via notificatie-events vanuit
-de bronnen), maar dit elimineert de vertraging niet volledig.
+wanneer conflictdetectie en -resolutie extra verwerkingstijd vergen, wat des te meer reden is om de
+actualiteit expliciet vast te leggen.
 
 ## 2. Juistheid en consistentie
 
@@ -80,6 +75,12 @@ toewijsbaar is aan één specifieke bron. De provenance wordt complexer: naast d
 ook de toegepaste consolidatieregel worden vastgelegd. Dit staat op gespannen voet met het principe
 dat data authentiek moet zijn aan de oorspronkelijke vastlegging.
 
+Bij consolidatie is het verstrekkingspunt feitelijk een nieuwe bron: het ontsluit niet alleen
+gegevens uit de oorspronkelijke bronnen, maar ook eigen conclusies op basis van consolidatieregels.
+Dit betekent dat een consoliderend verstrekkingspunt zowel maximaal de originele bronnen dient te
+weerspiegelen, als de eigen afgeleide conclusies zelfstandig moet verantwoorden, met bijbehorende
+eisen aan herleidbaarheid en provenance.
+
 ## 4. Toegangscontrole
 
 _"De toegang tot gegevens moet gecontroleerd kunnen worden, bij voorkeur door of namens de
@@ -110,7 +111,7 @@ verwante begrippen samen: *traceerbaarheid* (volgen van gegevens door ketens), *
 
 Herleidbaarheid is een van de belangrijkste voordelen van het samenvoegend verstrekkingspunt ten
 opzichte van alternatieven. In het estafettemodel lopen gegevens via meerdere tussenstations
-waardoor de herkomst moeilijk traceerbaar wordt. Een samenvoegend verstrekkingspunt reduceert het
+waardoor de herkomst moeilijker traceerbaar wordt. Een samenvoegend verstrekkingspunt reduceert het
 aantal schakels: de afnemer heeft één verstrekkingspunt en dat verstrekkingspunt heeft directe
 relaties met de bronnen.
 
