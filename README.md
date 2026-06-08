@@ -43,7 +43,7 @@ Per variatie werken we uit:
   ([bron](https://www.noraonline.nl/wiki/Begrip:Id-6ed15269-8079-6b81-8f7d-2f6a1cae488d))
 - **bounded context**: Een (sub)domein of taakgebied waarin concepten eenduidig geïnterpreteerd
   worden, regels en gedrag consistent zijn en bedrijfsprocessen op elkaar aansluiten
-  ([bron](https://website-digilab-overheid-nl-research-uit-betrouw-e1f39021ce924c.gitlab.io/handreiking/handreiking.html#registergrenzen.md__bounded-context))[^1]
+  ([bron](https://uitbetrouwbarebron.rijks.app/handreiking/grenzen#bounded-context))[^1]
 
 
 ## Herleidbaarheid en traceerbaarheid
@@ -104,7 +104,7 @@ This repo is licensed under [EUPL v1.2](LICENSE).
 
 [^1]: Bounded context is een begrip uit Domain Driven Design en wordt ook in de [Handreiking van Uit
     betrouwbare
-    bron](https://website-digilab-overheid-nl-research-uit-betrouw-e1f39021ce924c.gitlab.io/handreiking/handreiking.html#registergrenzen.md__bounded-context)
+    bron](https://uitbetrouwbarebron.rijks.app/handreiking/grenzen#bounded-context)
     scherp beschreven:
 
     > Binnen een domein kunnen meerdere subdomeinen of taakgebieden bestaan. Daarbij horen
