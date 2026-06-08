@@ -102,9 +102,9 @@ This repo is licensed under [EUPL v1.2](LICENSE).
 
 ---
 
-[^1]: Bounded context is een begrip uit Domain Driven Design en wordt ook in de [Handreiking van Uit
-    betrouwbare
-    bron](https://uitbetrouwbarebron.rijks.app/handreiking/grenzen#bounded-context)
+[^1]: Bounded context is een begrip uit Domain Driven Design en wordt ook in de
+    [Handreiking betrouwbare
+    registers](https://uitbetrouwbarebron.rijks.app/handreiking/grenzen#bounded-context)
     scherp beschreven:
 
     > Binnen een domein kunnen meerdere subdomeinen of taakgebieden bestaan. Daarbij horen
